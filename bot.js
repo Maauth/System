@@ -186,7 +186,7 @@ client.on('message', async message => {
       message.delete(3500); 
     });
    
-    if(mention.hasPermission('ADMINISTRATOR')) return message.channel.send(`**:x: لا يمكن آعطاء ميوت لادارة السيرفر**`); \
+    if(mention.hasPermission('ADMINISTRATOR')) return message.channel.send(`**لا يمكن آعطاء ميوت لادارة السيرفر**`); \
  
     if(message.guild.member(mention).roles.find('name', 'Muted')) return message.channel.send(`**:information_source: ${mention.user.username} Already Muted**`);
  
